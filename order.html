@@ -1,0 +1,92 @@
+<doctype! html>
+<html>
+    <head>
+       
+      <title>the car stock</title>
+         <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="heading">
+            
+            <h1>Order</h1>
+                
+        </div>
+        <div class="navigation">
+             <a href="home.html">Home</a>
+              <a href="products.html">Products</a>
+               <a href="order.html">Order</a>
+                <a href="about.html">About</a>
+            </div>  
+        <div class="major_content">
+           <div class="side column">
+            <h3>side column</h3>
+                <p>This is the place where text go</p>
+           </div>
+
+           <div class="middle column">
+            <h2>Order us now</h2>
+            <form id="form">
+                
+             <p>Enter Name:<input type="text" size="20" maxlength="20" id="user_name" value="full name please"> </p>
+             <p>Enter the Model<input type="text" size="20" maxlength="20" id="model" value="full model name please"> </p>
+             <p>Payment Method<input type="radio"  id="payment_method1" value="credit">Credit<input type="radio"  id="payment_method2" value="debit">Debit </p>
+             <p>Enter Debit/Credit card pin:<input type="text" size="4" maxlength="6" id="card_pin" value="****"> </p>
+                <p>Please pick feature:</p>
+                <ol>
+               <li><input type="checkbox" id="luxury" value="luxury_module">Luxury Mudule </li>
+               <li><input type="checkbox" id="sports" value="sports_module">Sports Mudule </li> 
+               <li><input type="checkbox" id="racing" value="racing_module"> Professional Racing Mudule </li> 
+               <li>Family Module </li> 
+                      <ul>
+                         <li><input type="checkbox" id="child_seat" value="Child Seat Module">Child Seat Mudule </li> 
+                         <li><input type="checkbox" id="extra_entertainment" value="extre_entertainment_module"> Extra Entertainment Mudule </li> 
+  
+                    </ul>
+                </ol>
+               <p>Select the place for delivery:</p>
+                <select id="delivery_place" >
+                <option value="England">England</option>
+                    <option value="Australia">Australia</option>
+                    <option value="U.S">U.S</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Canada">Canada</option>
+                
+                
+                </select>
+                <p>Type in your comment here:<textarea id="user_comment" cols="40" rows="4" >Comment here</textarea></p>
+                <input type="reset" value="reset" size="20" >
+                <button type="button" id="subButton" >order your dream ride!</button>
+                
+               
+               </form>
+           </div>
+
+           <div class="side column">
+            <h3>side column</h3>
+                <p>This is the place where text go</p>
+           </div>
+
+             
+         </div>    
+                                  
+       <script>
+               
+           function get_the_form(){
+              var user_name= Document.getElementById("user_name" ).value;
+              var model_name=Document.getElementById("model").value;
+              if(Document.getElementById("payment_method1").checked){
+                  payment_method_txt=credit;
+              }
+               if(Document.getElementById("payment_method2").checked){
+                  payment_method_txt=debit;
+              }
+           
+           }
+           
+        </script>
+       
+    
+     
+    </body>
+</html>    
+     
